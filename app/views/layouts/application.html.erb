@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stockpile</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header class="header">
-      <div class="inner">
-        <div class="nav">
-          <div class="nav__left">
-            <%= link_to image_tag("logo5.png", class: :logo), "#" %> <%# 5or8 %>
-          </div>
-            <div class="nav__right">
-              <%= link_to "ログアウト", "#", class: :nav__logout %>
-            </div>
+      <div class="nav">
+        <div class="nav__left">
+          <%= link_to image_tag("logo5.png", class: :logo), "#" %> <%# 5or8 %>
+        </div>
+        <div class="nav__right">
+          <%= link_to "ログアウト", "#", class: :nav__logout %>
         </div>
       </div>
     </header>
