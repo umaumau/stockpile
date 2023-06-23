@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stockpile</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class="header">
+      <div class="inner">
+        <div class="nav">
+          <div class="nav__left">
+            <%= link_to image_tag("logo5.png", class: :logo), "#" %> <%# 5or8 %>
+          </div>
+            <div class="nav__right">
+              <%= link_to "ログアウト", "#", class: :nav__logout %>
+            </div>
+        </div>
+      </div>
+    </header>
     <%= yield %>
+    <footer class="footer">
+      <p class="copyright">© Stockpiler All rights reserved.</p>
+    </footer>
   </body>
 </html>
