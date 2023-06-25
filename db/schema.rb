@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 2023_06_23_134827) do
 
   create_table "records", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "price", null: false
-    t.integer "time_minute", null: false
+    t.integer "price"
+    t.integer "time_minute"
     t.string "content", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
