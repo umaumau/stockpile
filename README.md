@@ -10,7 +10,7 @@
 ### Association
 
 - has_one :option, dependent: :destroy
-- has_many :stockpiles, dependent: :destroy
+- has_many :records, dependent: :destroy
 
 ## recordsテーブル
 
