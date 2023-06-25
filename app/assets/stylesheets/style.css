@@ -36,6 +36,16 @@
   height: calc(93vh - 65px - 35px);
 }
 
+/* トップページ */
+
+.record{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
 /* フッター */
 
 .footer {

@@ -2,11 +2,21 @@
 </div>
 <div>「結婚式までに10キロ落とす！」に向けてがんばりましょう！
 </div>
-<div>今日の記録をつける。
-  <div>
-    <%= form_with model: @record, url: records_path, local: true do |f| %>
-      <%= f.text_field :content, class: "" %>を
-      <%= f.number_field :time_minute, class: "" %>分できた！
-    <% end %>
-  </div>
+<div class="record">今日の記録をする。
+  <%= button_tag "がんばった！", id: "complete", type: "button"%>
+  <%= button_tag "むだづかい", id: "wasteful", type: "button"%>
+</div>
+<div class="hidden", id="complete_form">
+  <%= form_with model: @record, url: records_path, local: true do |f| %>
+    <%= f.text_field :content, class: "" %>を
+    <%= f.number_field :time_minute, class: "" %>分できた！
+    <%= f.submit "記録する"%>
+  <% end %>
+</div>
+<div class="hidden", id="wasteful_form">
+  <%= form_with model: @record, url: records_path, local: true do |f| %>
+    <%= f.text_field :content, class: "" %>に
+    <%= f.number_field :price, class: "" %>円使った
+    <%= f.submit "記録する"%>
+  <% end %>
 </div>

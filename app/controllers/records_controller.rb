@@ -4,10 +4,6 @@ class RecordsController < ApplicationController
     @record = Record.new
   end
 
-  def new
-    
-  end
-
   def create
   end
   
