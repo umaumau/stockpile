@@ -1,5 +1,5 @@
 class Option < ApplicationRecord
-  validates :at_least_one_field_present
+  validate :at_least_one_field_present
   validates :rate, numericality: {only_integer: true, greater_than_or_equal_to: 1}
 
   belongs_to :user
