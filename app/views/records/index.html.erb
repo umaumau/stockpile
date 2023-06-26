@@ -10,14 +10,14 @@
 <div class="hidden", id="complete_form">
   <%= form_with model: @record, url: records_path, local: true do |f| %>
     <%= f.text_field :content, class: "" %>を
-    <%= f.number_field :time_minute, class: "" %>分できた！
-    <%= f.submit "記録する"%>
+    <%= f.number_field :time_minute, class: "", min: "1" %>分できた！
+    <%= f.submit "記録する", name: "form_type", value: "がんばった！の記録をする"%>
   <% end %>
 </div>
 <div class="hidden", id="wasteful_form">
   <%= form_with model: @record, url: records_path, local: true do |f| %>
     <%= f.text_field :content, class: "" %>に
-    <%= f.number_field :price, class: "" %>円使った
-    <%= f.submit "記録する"%>
+    <%= f.number_field :price, class: "", min: "1" %>円使った
+    <%= f.submit "記録する", name: "form_type", value: "むだづかいの記録をする"%>
   <% end %>
 </div>

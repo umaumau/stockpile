@@ -7,7 +7,13 @@ class RecordsController < ApplicationController
   end
 
   def create
-    @record = Record.create(record_params)
+    @record = Record.new(record_params)
+    if params[:form_type] == "がんばった！の記録をする"
+      @record.save
+    else
+      @record.price = -@record.price
+      @record.save
+    end
     redirect_to action: :index
   end
 
