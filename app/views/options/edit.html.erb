@@ -1,3 +1,7 @@
 <h1>編集する</h1>
-<%= render partial: "form", locals: {option: @option} %>
-<%= link_to "全てクリアにする", option_path(current_user), method: :delete %>
+<%= form_with model: @option, local: true do |f| %>
+  目標：<%= f.text_field :goal, class: "", placeholder: "例）結婚式までに10万円貯める" %>
+  期限：<%= f.date_field :limit, class: "" %>
+  レート：1分＝<%= f.number_field :rate, class: "", placeholder: "例）10", min: "1" %>円
+  <%= f.submit "保存する", class: "" %>
+<% end %>

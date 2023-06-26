@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :basic_auth
+  before_action :create_option, if: :devise_controller?
 
   private
 
@@ -8,4 +9,11 @@ class ApplicationController < ActionController::Base
       username == ENV["BASIC_AUTH_USER"] && password == ENV["BASIC_AUTH_PASSWORD"]
     end
   end
+
+  def create_option
+    if current_user.option.nil?
+      Option.create
+    end
+  end
+  
 end

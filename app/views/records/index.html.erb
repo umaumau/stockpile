@@ -1,7 +1,10 @@
 <div>
   <%= "現在、#{@price_sum}円貯まっています！" %>
 </div>
-<div>「結婚式までに10キロ落とす！」に向けてがんばりましょう！
+<div>
+  <% if current_user.option.goal.present? %>
+    <%= "「#{current_user.option.goal}」に向けてがんばりましょう！" %>
+  <% end %>
 </div>
 <div class="record">今日の記録をする。
   <%= button_tag "がんばった！", id: "complete", type: "button"%>
