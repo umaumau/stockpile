@@ -1,5 +1,6 @@
 class RecordsController < ApplicationController
-  
+  before_action :authenticate_user!
+
   def index
     time_minute_sum = current_user.records.sum(:time_minute) * 10
     @price_sum = current_user.records.sum(:price) + time_minute_sum
