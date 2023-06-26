@@ -16,6 +16,7 @@
           <%= link_to image_tag("logo5.png", class: :logo), root_path %> <%# 5or8 %>
         </div>
         <div class="nav__right">
+          <%= link_to "設定", edit_option_path(current_user) %>
           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
         </div>
       </div>
