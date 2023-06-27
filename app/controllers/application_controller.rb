@@ -12,15 +12,17 @@ class ApplicationController < ActionController::Base
   end
 
   def create_option
-    if current_user.option.nil?
+    if user_signed_in? && current_user.option.nil?
       Option.create
     end
   end
 
   def left_days
-    limit = current_user.option.limit
-    today = Date.today
-    @days = (limit - today).to_i
+    if user_signed_in? && current_user.option.limit.present?
+      limit = current_user.option.limit
+      today = Date.today
+      @days = (limit - today).to_i
+    end
   end
   
 end
