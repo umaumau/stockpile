@@ -7,7 +7,7 @@ class OptionsController < ApplicationController
 
   def update
     if @option.update(option_params)
-      redirect_to action: :edit
+      redirect_to root_path
     else
       render :edit
     end
