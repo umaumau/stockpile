@@ -16,6 +16,10 @@
           <%= link_to image_tag("logo5.png", class: :logo), root_path %> <%# 5or8 %>
         </div>
         <div class="nav__right">
+          <% if current_user.option.limit.present? %>
+            <%= "あと#{@days}日" %>
+          <% end %>
+          <%= link_to "過去の記録", "#"%>
           <%= link_to "設定", edit_option_path(current_user.option) %>
           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
         </div>
