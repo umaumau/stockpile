@@ -76,18 +76,27 @@ a {
   margin-bottom: 100px;
 }
 
-.title span {
+.price_sum span {
   margin-right: 10px;
   letter-spacing: 1px;
   color: #f88b9c;
 }
 
 .goal {
-  margin: 10px 0px;
+  margin: 10px 0px 30px;
+}
+
+.goal span {
+  background:linear-gradient(transparent 70%, #fff3f6 0%);
 }
 
 .record{
   display: flex;
+}
+
+.record span {
+  margin-right: 10px;
+  color: #fcd8d8;
 }
 
 .hidden{
