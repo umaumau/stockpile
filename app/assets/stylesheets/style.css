@@ -72,6 +72,17 @@ a {
   background-color: #fff;
 }
 
+.record_errors {
+  font-size: 15px;
+  color: red;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.field_with_errors {
+  display: contents;
+}
+
 .title {
   margin-bottom: 100px;
 }

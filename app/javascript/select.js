@@ -3,9 +3,11 @@ const select = () => {
   const wastefulButton = document.getElementById("wasteful");
   const completeForm = document.getElementById("complete_form");
   const wastefulForm = document.getElementById("wasteful_form");
+  const completeSendButton = document.getElementById("complete_btn");
+  const wastefulSendButton = document.getElementById("wasteful_btn");
 
   completeButton.addEventListener('mouseover', () => {
-    completeButton.setAttribute("style", "background-color:#ffc0cb;");
+    completeButton.setAttribute("style", "background-color:#FFB6C1; color:#fff;");
   })
   completeButton.addEventListener('mouseout', () => {
     if (completeForm.getAttribute("style") == "display:block;") {
@@ -24,8 +26,15 @@ const select = () => {
     }
   })
 
+  completeSendButton.addEventListener('mouseover', () => {
+    completeSendButton.setAttribute("style", "background-color:#FFB6C1; color:#fff;");
+  });
+  completeSendButton.addEventListener('mouseout', () => {
+    completeSendButton.removeAttribute("style");
+  });
+
   wastefulButton.addEventListener('mouseover', () => {
-    wastefulButton.setAttribute("style", "background-color:#4169E1;");
+    wastefulButton.setAttribute("style", "background-color:#FFB6C1; color:#fff;");
   })
   wastefulButton.addEventListener('mouseout', () => {
     if (wastefulForm.getAttribute("style") == "display:block;") {
@@ -43,6 +52,13 @@ const select = () => {
       wastefulForm.setAttribute("style", "display:block;");
     }
   })
+
+  wastefulSendButton.addEventListener('mouseover', () => {
+    wastefulSendButton.setAttribute("style", "background-color:#FFB6C1; color:#fff;");
+  });
+  wastefulSendButton.addEventListener('mouseout', () => {
+    wastefulSendButton.removeAttribute("style");
+  });
 }
 
 window.addEventListener("load", select);
