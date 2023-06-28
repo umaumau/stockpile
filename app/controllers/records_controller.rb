@@ -2,23 +2,32 @@ class RecordsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    time_minute_sum = current_user.records.sum(:time_minute) * current_user.option.rate
-    @price_sum = current_user.records.sum(:price) + time_minute_sum
+    price_sum_calculation
     @record = Record.new
   end
 
   def create
     @record = Record.new(record_params)
-    if params[:form_type] == "がんばった！の記録をする"
-      @record.save
+    if @record.valid?
+      if params[:form_type] == "がんばった！の記録をする"
+        @record.save
+      else
+        @record.price = -@record.price
+        @record.save
+      end
+      redirect_to action: :index
     else
-      @record.price = -@record.price
-      @record.save
+      price_sum_calculation
+      render :index
     end
-    redirect_to action: :index
   end
 
   private
+
+  def price_sum_calculation
+    time_minute_sum = current_user.records.sum(:time_minute) * current_user.option.rate
+    @price_sum = current_user.records.sum(:price) + time_minute_sum
+  end
 
   def record_params
     params.require(:record).permit(:content, :price, :time_minute).merge(user_id: current_user.id)

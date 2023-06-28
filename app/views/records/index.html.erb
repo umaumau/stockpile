@@ -1,4 +1,8 @@
 <div class="main">
+  <% if @record.errors.any? %>
+  <div class="record_errors">※保存できませんでした。空欄が無いこと、数値は半角であることに注意して再度入力してください。
+  </div>
+  <% end %>
   <div class="title">
     <div class="price_sum">
       現在、<span><%= "#{@price_sum} 円"%></span>貯まっています！
@@ -13,7 +17,7 @@
       <%= form_with model: @record, url: records_path, local: true do |f| %>
         <%= f.text_field :content, class: "price_use_form", placeholder: "例）旅行費用" %>として
         <%= f.number_field :price, class: "price_use_form", placeholder: "例）300000", min: "1" %>円つかう！
-        <%= f.submit "記録する", name: "form_type", value: "OK！", class: "btn"%>
+        <%= f.submit "記録する", name: "form_type", value: "OK！", class: "btn", id: "ok"%>
       <% end %>
     </div>
   </div>
@@ -25,14 +29,14 @@
     <%= form_with model: @record, url: records_path, local: true do |f| %>
       <%= f.text_field :content, class: "record_form", placeholder: "例）運動" %>を
       <%= f.number_field :time_minute, class: "record_form", placeholder: "例）20", min: "1" %>分できた！
-      <%= f.submit "記録する", name: "form_type", value: "がんばった！の記録をする", class: "btn"%>
+      <%= f.submit "記録する", name: "form_type", value: "がんばった！の記録をする", class: "btn",id: "complete_btn"%>
     <% end %>
   </div>
   <div class="hidden", id="wasteful_form">
     <%= form_with model: @record, url: records_path, local: true do |f| %>
       <%= f.text_field :content, class: "record_form", placeholder: "例）おかし" %>に
       <%= f.number_field :price, class: "record_form", placeholder: "例）300", min: "1" %>円使った
-      <%= f.submit "記録する", name: "form_type", value: "むだづかいの記録をする", class: "btn"%>
+      <%= f.submit "記録する", name: "form_type", value: "むだづかいの記録をする", class: "btn", id: "wasteful_btn"%>
     <% end %>
   </div>
 </div>
