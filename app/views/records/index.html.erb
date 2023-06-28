@@ -1,5 +1,13 @@
 <div>
   <%= "現在、#{@price_sum}円貯まっています！" %>
+  <%= button_tag "つかう！", id: "use", type: "button"%>
+</div>
+<div class="hidden", id="use_form">
+  <%= form_with model: @record, url: records_path, local: true do |f| %>
+    <%= f.text_field :content, class: "", placeholder: "例）旅行費用" %>として
+    <%= f.number_field :price, class: "", placeholder: "例）300000", min: "1" %>円つかう！
+    <%= f.submit "記録する", name: "form_type", value: "OK"%>
+  <% end %>
 </div>
 <div>
   <% if current_user.option.goal.present? %>

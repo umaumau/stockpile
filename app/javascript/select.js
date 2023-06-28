@@ -17,6 +17,8 @@ const select = () => {
       wastefulForm.removeAttribute("style");
       completeForm.setAttribute("style", "display:block;");
       wastefulButton.removeAttribute("style");
+    } else if (completeForm.getAttribute("style") == "display:block;") {
+      completeForm.removeAttribute("style");
     } else {
       completeForm.setAttribute("style", "display:block;");
     }
@@ -35,6 +37,8 @@ const select = () => {
       completeForm.removeAttribute("style");
       wastefulForm.setAttribute("style", "display:block;");
       completeButton.removeAttribute("style");
+    } else if (wastefulForm.getAttribute("style") == "display:block;") {
+      wastefulForm.removeAttribute("style");
     } else {
       wastefulForm.setAttribute("style", "display:block;");
     }
