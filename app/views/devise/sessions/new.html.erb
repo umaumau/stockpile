@@ -1,26 +1,31 @@
 <div class="container">
-  <h2>Log in</h2>
+  <div class="devise_title">ログイン
+  </div>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
   <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
-    <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true %>
+    <div class="email_field">
+      <%= f.label :email, "メールアドレス" %><br />
+      <%= f.email_field :email, class: "devise_form", autofocus: true %>
     </div>
 
-    <div class="field">
-      <%= f.label :password %><br />
-      <%= f.password_field :password, autocomplete: "off" %>
+    <div class="password_field">
+      <%= f.label :password, "パスワード" %><br />
+      <%= f.password_field :password, class: "devise_form", autocomplete: "off" %>
     </div>
 
     <% if devise_mapping.rememberable? %>
-      <div class="field">
-        <%= f.label :remember_me %><br />
-        <%= f.check_box :remember_me %>
+      <div class="check_field">
+        <%= f.label :remember_me, "ログイン情報を記憶する" %>
+        <%= f.check_box :remember_me, class: "check_box" %>
       </div>
     <% end -%>
 
     <div class="actions">
-      <%= f.submit "Log in" %>
+      <%= f.submit "ログインする", class: "btn" %>
     </div>
   <% end %>
-  <%= link_to "新規登録", new_user_registration_path %>
+  <div class="registration_link">
+    <%= link_to "新規登録はこちら", new_user_registration_path %>
+  </div>
 </div>
