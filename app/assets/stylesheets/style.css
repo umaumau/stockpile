@@ -264,26 +264,55 @@ a {
   margin-left: 10px;
 }
 
-.actions {
+.session_actions {
   width: 150px;
   margin: 30px auto 20px;
 }
 
-.actions .btn {
+.session_actions .btn {
   width: 100%;
   font-size: 20px;
   padding: auto;
 }
 
-.registration_link {
+.devise_link {
   width: 120px;
   margin: 0 auto;
 }
 
-.registration_link a {
+.devise_link a {
   font-size: 15px;
   color: #333333;
   background:linear-gradient(transparent 70%, #ffd8e2 0%);
+}
+
+/* 新規登録 */
+
+.devise_error_air_space {
+  height: 15px;
+}
+
+.devise_error_messages {
+  list-style: none;
+  font-size: 15px;
+  color: red;
+  display: contents;
+}
+
+.password_field span {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.registration_actions {
+  width: 100px;
+  margin: 30px auto 20px;
+}
+
+.registration_actions .btn {
+  width: 100%;
+  font-size: 20px;
+  padding: auto;
 }
 
 /* フッター */

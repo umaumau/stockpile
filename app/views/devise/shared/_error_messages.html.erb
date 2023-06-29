@@ -1,7 +1,11 @@
 <% if resource.errors.any? %>
+  <div class="devise_error_air_space">
+  </div>
   <div id="error_explanation" data-turbo-cache="false">
-    <% resource.errors.full_messages.each do |message| %>
-      <%= message %>
-    <% end %>
+    <ul class="devise_error_messages">
+      <% resource.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+      <% end %>
+    </ul>
   </div>
 <% end %>
