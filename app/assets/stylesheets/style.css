@@ -52,23 +52,26 @@ a {
   padding-left: 20px;
 }
 
-/* 新規登録 */
+/* レイアウト */
 
-.contents_row{
-  width: 100%;
-  height: calc(99vh - 65px - 35px);
+.contents_row {
+  background-color: #fff;
+}
+
+.main{
+  width: 60vw;
+  height: calc(100vh - 65px - 35px);
   font-family: 'Zen Maru Gothic', sans-serif;
   font-size: 23px;
   color: rgb(54, 54, 54);
   padding: 100px 0;
+  margin: 0 auto;
   background-color: #fff;
 }
 
 /* トップページ */
 
-.main {
-  width: 800px;
-  margin: 0 auto;
+.top_page {
   background-color: #fff;
 }
 
@@ -133,7 +136,7 @@ a {
   border: 1px solid #999;
   border-radius: 5px;
   font-size: 18px;
-  padding: 5px;
+  padding: 5px 10px;
   margin: 0 5px 30px 0;
   width: 150px;
 }
@@ -142,10 +145,76 @@ a {
   border: 1px solid #999;
   border-radius: 5px;
   font-size: 18px;
-  padding: 5px;
+  padding: 5px 10px;
   margin-right: 5px;
   width: 150px;
 }
+
+/* 設定ページ */
+
+.option {
+  background-color: #fff;
+}
+
+.option_explanation {
+  width: 80%;
+  margin: 0 auto 40px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.option_explanation span {
+  margin-right: 10px;
+  color: #fcd8d8;
+}
+
+.option_form {
+  width: 80%;
+  margin: 60px auto 0;
+}
+
+.goal_form {
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 0 0 20px 10px;
+  width: 80%;
+}
+
+.limit_form {
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 0 0 20px 10px;
+  width: 150px;
+}
+
+.rate_form {
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 0 10px 20px 10px;
+  width: 150px;
+}
+
+.rate_option span {
+  letter-spacing: 5px;
+}
+
+.option_submit {
+  width: 100px;
+  margin: 30px auto 0;
+}
+
+.option_submit .btn {
+  width: 100%;
+  font-size: 20px;
+  padding: auto;
+}
+
 
 /* フッター */
 
@@ -153,8 +222,6 @@ a {
   background-color: #999;
   width: 100vw;
   height: 35px;
-}
-.copyright {
   text-align: center;
   line-height: 35px;
   color: #fff;
