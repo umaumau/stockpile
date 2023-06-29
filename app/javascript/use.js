@@ -1,7 +1,7 @@
 const use = () => {
   const useButton = document.getElementById("use");
   const useForm = document.getElementById("use_form");
-  const okButton = document.getElementById("ok")
+  const okButton = document.getElementById("ok");
 
   useButton.addEventListener('mouseover', () => {
     useButton.setAttribute("style", "background-color:#FFB6C1; color:#fff;");

@@ -22,10 +22,10 @@
     <% end -%>
 
     <div class="session_actions">
-      <%= f.submit "ログインする", class: "btn" %>
+      <%= f.submit "ログインする", class: "btn", id: "session_btn" %>
     </div>
   <% end %>
   <div class="devise_link">
-    <%= link_to "新規登録はこちら", new_user_registration_path %>
+    <%= link_to "新規登録はこちら", new_user_registration_path, id: "registration_link" %>
   </div>
 </div>
