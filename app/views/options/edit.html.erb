@@ -2,17 +2,28 @@
   <div class="option">
     <div class="option_explanation">
       <span>＊</span>設定を変更したいときは、以下のフォームを編集して保存してください。<br>
-      <span>＊</span>設定をクリアにしたいときは、空欄にして保存してください。
+      <span>＊</span>目標と期限をクリアにしたいときは、空欄にして保存してください。<br>
+      <span>＊</span>レートは必須です。（デフォルトは 1 分 ＝ 1 円です。）
     </div>
     <%= form_with model: @option, class: "option_form", local: true do |f| %>
+      <% if @option.errors.any? %>
+        <ul class="option_error_messages">
+          <% @option.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      <% end %>
       <div class="">
-        目標：<%= f.text_field :goal, class: "goal_form", placeholder: "例）結婚式までに10万円貯める" %>
+        <%= f.label :goal, "目標：" %>
+        <%= f.text_field :goal, class: "goal_form", placeholder: "例）結婚式までに10万円貯める" %>
       </div>
       <div class="">
-        期限：<%= f.date_field :goal_day, class: "limit_form" %>
+        <%= f.label :goal, "期限：" %>
+        <%= f.date_field :goal_day, class: "limit_form" %>
       </div>
       <div class="rate_option">
-        レート： <span>1分＝</span><%= f.number_field :rate, class: "rate_form", placeholder: "例）10", min: "1" %>円
+        <%= f.label :goal, "レート：" %>
+        <span>1分＝</span><%= f.number_field :rate, class: "rate_form", placeholder: "例）10", min: "1" %>円
       </div>
       <div class="option_submit">
         <%= f.submit "保存する", class: "btn", id: "option_submit_btn" %>
