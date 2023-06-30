@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 2023_06_26_081421) do
 
   create_table "options", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "goal"
-    t.date "limit"
-    t.integer "rate"
+    t.date "goal_day"
+    t.integer "rate", default: 1, null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

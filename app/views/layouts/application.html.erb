@@ -21,7 +21,7 @@
         <div class="nav__right">
           <% if user_signed_in? %>
             <div class="left_days">
-              <% if current_user.option.limit.present? %>
+              <% if current_user.option.goal_day.present? %>
                 <%= "あと#{@days}日" %>
               <% end %>
             </div>
@@ -41,9 +41,7 @@
       </div>
     </header>
     <div class="contents_row">
-      <div class="main">
-        <%= yield %>
-      </div>
+      <%= yield %>
     </div>
     <footer class="footer">
       © Stockpiler All rights reserved.

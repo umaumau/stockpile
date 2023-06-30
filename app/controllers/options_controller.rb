@@ -20,7 +20,7 @@ class OptionsController < ApplicationController
   end
 
   def option_params
-    params.require(:option).permit(:goal, :limit, :rate).merge(user_id: current_user.id)
+    params.require(:option).permit(:goal, :goal_day, :rate).merge(user_id: current_user.id)
   end
 
 end
