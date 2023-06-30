@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :basic_auth
-  before_action :create_option, if: :devise_controller?
+  before_action :create_option
   before_action :left_days
 
   private
@@ -13,15 +13,16 @@ class ApplicationController < ActionController::Base
 
   def create_option
     if user_signed_in? && current_user.option.nil?
-      Option.create
+      current_user.build_option
+      current_user.option.save
     end
   end
 
   def left_days
-    if user_signed_in? && current_user.option.limit.present?
-      limit = current_user.option.limit
+    if user_signed_in? && current_user.option.goal_day.present?
+      goal_day = current_user.option.goal_day
       today = Date.today
-      @days = (limit - today).to_i
+      @days = (goal_day - today).to_i
     end
   end
   
