@@ -27,12 +27,12 @@
 
 ## optionsテーブル
 
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| goal   | string     |                                |
-| limit  | date       |                                |
-| rate   | integer    |                                |
-| user   | references | null: false, foreign_key: true |
+| Column   | Type       | Options                        |
+| -------- | ---------- | ------------------------------ |
+| goal     | string     |                                |
+| goal_day | date       |                                |
+| rate     | integer    |                                |
+| user     | references | null: false, foreign_key: true |
 
 ### Association
 
