@@ -73,6 +73,8 @@ a {
 
 .top_page {
   background-color: #fff;
+  width: 80%;
+  margin: 50px auto 0;
 }
 
 .record_errors {
@@ -98,6 +100,7 @@ a {
 
 .goal {
   margin: 10px 0px 30px;
+  line-height: 30px;
 }
 
 .goal span {
@@ -137,7 +140,7 @@ a {
   border-radius: 5px;
   font-size: 18px;
   padding: 5px 10px;
-  margin: 0 5px 30px 0;
+  margin: 0 5px 0 0;
   width: 150px;
 }
 
@@ -224,9 +227,21 @@ a {
 
 /* ログイン画面 */
 
+.session_main{
+  width: 60vw;
+  height: calc(100vh - 65px - 35px);
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 23px;
+  color: #333333;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
 .container {
   width: 40%;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   background-color: #fff;
 }
 
@@ -301,14 +316,16 @@ a {
   font-family: 'Zen Maru Gothic', sans-serif;
   font-size: 23px;
   color: #333333;
-  padding: 100px 0;
   margin: 0 auto;
   background-color: #fff;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .registration_container {
   width: 30%;
+  margin-bottom: 30px;
   background-color: #fff;
 }
 
@@ -342,8 +359,95 @@ a {
 /* welcome画面 */
 
 .welcom_container {
-  width: 70%;
+  width: 65%;
   background-color: #fff;
+  font-size: 18px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+
+.stockpile_explanation {
+  margin-bottom: 50px;
+}
+
+.stockpile {
+  color: #f88b9c;
+  letter-spacing: 1px;
+}
+
+.fictional_savings {
+  letter-spacing: 1px;
+  background:linear-gradient(transparent 70%, #ffdee6 0%);
+}
+
+.motivation {
+  text-decoration: underline;
+  text-decoration-color: #ffdee6;
+  text-decoration-style: wavy;
+}
+
+.how_to_stockpile {
+  letter-spacing: 1px;
+  color: #ffc5d4;
+}
+
+.line {
+  color: #fcd8d8;
+}
+
+.color_block {
+  width: 83%;
+  background-color: #fffbfb;
+  border-radius: 100px;
+  padding: 15px 0 0 15px;
+}
+
+.color_block .title_space {
+  margin-left: 40px;
+}
+
+.example_how_to {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto 0;
+}
+
+.stockpile_user_img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.example_center {
+  height: 100%;
+  margin: auto 10px auto 0 ;
+  font-size: 35px;
+  color: #ffdee6;
+}
+
+.example_right {
+  margin: auto 0;
+  height: 100%;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.down_arrow {
+  width: 20px;
+  margin: 10px auto 8px;
+  color: #ffdee6;
+  /* color: #b8b8b8; */
+}
+
+.ending {
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 40px;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #ffdee6;
 }
 
 /* フッター */
