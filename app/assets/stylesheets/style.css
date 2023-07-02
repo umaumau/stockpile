@@ -597,7 +597,7 @@ a {
   
   .devise_error_messages {
     list-style: none;
-    font-size: 15px;
+    font-size: 11px;
     color: red;
     display: contents;
   }
