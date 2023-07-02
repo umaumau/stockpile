@@ -58,6 +58,8 @@ a {
 
 .contents_row {
   background-color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 .main{
@@ -66,7 +68,6 @@ a {
   font-family: 'Zen Maru Gothic', sans-serif;
   font-size: 23px;
   color: #333333;
-  margin: 0 auto;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -77,8 +78,8 @@ a {
 
 .top_page {
   background-color: #fff;
-  width: 80%;
-  margin: 50px auto 0;
+  font-size: 30px;
+  margin-top: 150px;
 }
 
 .record_errors {
@@ -98,13 +99,12 @@ a {
 
 .price_sum span {
   margin-right: 10px;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
   color: #f88b9c;
 }
 
 .goal {
-  margin: 10px 0px 30px;
-  line-height: 30px;
+  margin: 30px 0px 30px;
 }
 
 .goal span {
@@ -122,27 +122,24 @@ a {
 
 .hidden{
   display: none;
-  margin: 20px 0 0 40px;
-  font-size: 20px;
+  margin: 40px 0 0 40px;
+  font-size: 25px;
 }
 
 .btn {
   border: 1px solid #FFB6C1;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 20px;
   padding: 5px;
   background-color: #fff;
   color: #f994a3;
-}
-
-.record .btn {
-  margin-right: 10px;
+  margin: 0 10px 0 10px;
 }
 
 .price_use_form {
   border: 1px solid #999;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 20px;
   padding: 5px 10px;
   margin: 0 5px 0 0;
   width: 150px;
@@ -151,7 +148,7 @@ a {
 .record_form {
   border: 1px solid #999;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 20px;
   padding: 5px 10px;
   margin-right: 5px;
   width: 150px;
@@ -160,10 +157,10 @@ a {
 /* 設定ページ */
 
 .option_explanation {
-  width: 700px;
-  font-size: 20px;
-  line-height: 40px;
-  margin: 150px 0 30px;
+  width: 800px;
+  font-size: 23px;
+  line-height: 50px;
+  margin: 100px 0 30px;
 }
 
 .option_explanation span {
@@ -174,38 +171,39 @@ a {
 .option_error_messages {
   width: 80%;
   list-style: none;
-  font-size: 15px;
+  font-size: 18px;
   color: red;
 }
 
 .option_form {
-  width: 600px;
-  margin-bottom: 100px;
+  width: 800px;
+  font-size: 28px;
+  margin: 30px 0 100px;
 }
 
 .goal_form {
   border: 1px solid #999;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 23px;
   padding: 5px 10px;
   margin: 20px 0 20px 0;
-  width: 500px;
+  width: 700px;
 }
 
 .goal_day_form {
   border: 1px solid #999;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 23px;
   padding: 5px 10px;
   margin: 0 0 20px 0;
-  width: 170px;
+  width: 200px;
   letter-spacing: 3px;
 }
 
 .rate_form {
   border: 1px solid #999;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 23px;
   padding: 5px 10px;
   margin: 0 10px 20px 10px;
   width: 150px;
@@ -217,13 +215,13 @@ a {
 }
 
 .option_submit {
-  width: 100px;
+  width: 120px;
   margin: 30px auto 0;
 }
 
 .option_submit .btn {
   width: 100%;
-  font-size: 20px;
+  font-size: 25px;
   padding: auto;
 }
 
@@ -519,6 +517,7 @@ a {
   .option_form {
     width: 500px;
     margin-bottom: 100px;
+    font-size: 23px;
   }
   
   .goal_form {
@@ -534,7 +533,7 @@ a {
     font-size: 20px;
     padding: 5px 10px;
     margin: 0 0 20px 0;
-    width: 170px;
+    width: 180px;
     letter-spacing: 3px;
   }
   
@@ -546,6 +545,17 @@ a {
     margin: 0 10px 20px 10px;
     width: 150px;
     letter-spacing: 3px;
+  }
+
+  .option_submit {
+    width: 100px;
+    margin: 30px auto 0;
+  }
+  
+  .option_submit .btn {
+    width: 100%;
+    font-size: 20px;
+    padding: auto;
   }
 }
 
@@ -765,6 +775,7 @@ a {
   .option_form {
     width: 280px;
     margin-bottom: 100px;
+    font-size: 15px;
   }
   
   .goal_form {

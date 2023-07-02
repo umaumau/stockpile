@@ -4,14 +4,14 @@
     <span>＊</span>目標と期限をクリアにしたいときは、空欄にして保存してください。<br>
     <span>＊</span>レートは必須です。（デフォルトは 1 分 ＝ 1 円です。）
   </div>
+  <% if @option.errors.any? %>
+    <ul class="option_error_messages">
+      <% @option.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
   <%= form_with model: @option, class: "option_form", local: true do |f| %>
-    <% if @option.errors.any? %>
-      <ul class="option_error_messages">
-        <% @option.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    <% end %>
     <div class="">
       <%= f.label :goal, "目標：" %>
       <%= f.text_field :goal, class: "goal_form", placeholder: "例）結婚式までに10万円貯める" %>
