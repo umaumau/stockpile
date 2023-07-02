@@ -61,14 +61,16 @@ a {
 }
 
 .main{
-  width: 60vw;
-  height: calc(100vh - 65px - 35px);
+  width: 80vw;
+  height: calc(1080px - 65px - 35px);
   font-family: 'Zen Maru Gothic', sans-serif;
   font-size: 23px;
   color: #333333;
-  padding-top: 100px;
   margin: 0 auto;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* トップページ */
@@ -157,15 +159,11 @@ a {
 
 /* 設定ページ */
 
-.option {
-  background-color: #fff;
-}
-
 .option_explanation {
-  width: 80%;
-  margin: 0 auto;
+  width: 700px;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 40px;
+  margin: 150px 0 30px;
 }
 
 .option_explanation span {
@@ -181,8 +179,8 @@ a {
 }
 
 .option_form {
-  width: 80%;
-  margin: 30px auto 0;
+  width: 600px;
+  margin-bottom: 100px;
 }
 
 .goal_form {
@@ -191,16 +189,17 @@ a {
   font-size: 20px;
   padding: 5px 10px;
   margin: 20px 0 20px 0;
-  width: 80%;
+  width: 500px;
 }
 
-.limit_form {
+.goal_day_form {
   border: 1px solid #999;
   border-radius: 5px;
   font-size: 20px;
   padding: 5px 10px;
   margin: 0 0 20px 0;
-  width: 150px;
+  width: 170px;
+  letter-spacing: 3px;
 }
 
 .rate_form {
@@ -210,6 +209,7 @@ a {
   padding: 5px 10px;
   margin: 0 10px 20px 10px;
   width: 150px;
+  letter-spacing: 3px;
 }
 
 .rate_option span {
@@ -503,6 +503,50 @@ a {
     height: calc(100% - 65px - 35px);
     margin: 260px auto;
   }
+
+  /* 設定画面 */
+
+  .main{
+    height: calc(1024px - 65px - 35px);
+  }
+
+  .option_explanation {
+    width: 570px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+  .option_form {
+    width: 500px;
+    margin-bottom: 100px;
+  }
+  
+  .goal_form {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 20px 0 20px 0;
+    width: 410px;
+  }
+  
+  .goal_day_form {
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 0 0 20px 0;
+    width: 170px;
+    letter-spacing: 3px;
+  }
+  
+  .rate_form {
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 0 10px 20px 10px;
+    width: 150px;
+    letter-spacing: 3px;
+  }
 }
 
 /* スマホ表示時 */
@@ -513,6 +557,7 @@ a {
 
   .header {
     height: 45px;
+    font-size: 10px;
   }
 
   .registration_main {
@@ -692,4 +737,57 @@ a {
     font-size: 10px;
     width: 140px;
   }
+
+  /* 設定画面 */
+
+  .main{
+    width: 100vw;
+    height: calc(896px - 45px - 35px);
+    font-size: 13px;
+  }
+
+  .option_explanation {
+    width: 300px;
+    font-size: 13px;
+    line-height: 25px;
+    margin: 70px 0 30px;
+  }
+  
+  .option_explanation span {
+    margin-right: 5px;
+  }
+  
+  .option_error_messages {
+    width: 80%;
+    font-size: 10px;
+  }
+  
+  .option_form {
+    width: 280px;
+    margin-bottom: 100px;
+  }
+  
+  .goal_form {
+    font-size: 13px;
+    width: 230px;
+  }
+  
+  .goal_day_form {
+    font-size: 13px;
+    width: 150px;
+  }
+  
+  .rate_form {
+    font-size: 13px;
+    width: 100px;
+  } 
+  
+  .option_submit {
+    width: 70px;
+  }
+  
+  .option_submit .btn {
+    font-size: 13px;
+  }
+  
 }
