@@ -25,8 +25,6 @@ class RecordsController < ApplicationController
   private
 
   def price_sum_calculation
-    # time_minute_sum = current_user.records.sum(:time_minute) * current_user.option.rate
-    # @price_sum = current_user.records.sum(:price) + time_minute_sum
     time_price_sum = 0
     current_user.records.each do |record|
       if record.time_minute.present?
