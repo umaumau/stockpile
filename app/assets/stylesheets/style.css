@@ -282,9 +282,16 @@ a {
   margin: 30px auto;
   font-size: 15px;
   width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.remember_me {
+  display: block;
 }
 
 .check_box {
+  display: block;
   margin-left: 10px;
 }
 
@@ -472,7 +479,11 @@ a {
 }
 
 /* タブレット表示時 */
+
 @media (max-width: 1283px) {
+
+  /* 新規登録画面 */
+
   .registration_main {
     height: calc(100% - 65px - 35px);
     margin: 60px auto;
@@ -487,12 +498,17 @@ a {
 }
 
 /* スマホ表示時 */
+
 @media (max-width: 715px) {
+
+  /* welcome画面 */
+
   .header {
     height: 45px;
   }
 
   .registration_main {
+    height: calc(100% - 45px - 35px);
     margin: 25px auto;
   }
 
@@ -630,5 +646,42 @@ a {
   
   .devise_link a {
     font-size: 10px;
+  }
+
+  /* ログイン画面 */
+
+  .session_main{
+    height: calc(100vh - 45px - 35px);
+    width: 80vw;
+    color: #333333;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 250px;
+    margin-bottom: 0px;
+    font-size: 15px;
+  }
+  
+  .devise_form {
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .session_actions {
+    width: 110px;
+    margin: 30px auto 10px;
+  }
+  
+  .session_actions .btn {
+    width: 100%;
+    font-size: 15px;
+    padding: auto;
+  }
+
+  .check_field {
+    margin: 30px auto;
+    font-size: 10px;
+    width: 140px;
   }
 }
