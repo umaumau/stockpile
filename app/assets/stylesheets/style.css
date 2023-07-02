@@ -21,10 +21,12 @@ a {
   height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  width: 200px;
+  height: 60px;
+  object-fit: contain;
 }
 
 .nav__right {
@@ -324,7 +326,7 @@ a {
 }
 
 .registration_container {
-  width: 30%;
+  width: 340px;
   margin-bottom: 30px;
   background-color: #fff;
 }
@@ -364,10 +366,12 @@ a {
   font-size: 18px;
   line-height: 35px;
   margin-bottom: 30px;
+  padding-right: 100px;
 }
 
 .stockpile_explanation {
-  margin-bottom: 50px;
+  width: 550px;
+  margin: 0 auto 50px;
 }
 
 .stockpile {
@@ -391,15 +395,12 @@ a {
   color: #ffc5d4;
 }
 
-.line {
-  color: #fcd8d8;
-}
-
 .color_block {
-  width: 83%;
+  width: 630px;
   background-color: #fffbfb;
   border-radius: 100px;
   padding: 15px 0 0 15px;
+  margin: 0 auto;
 }
 
 .color_block .title_space {
@@ -421,7 +422,7 @@ a {
 .example_center {
   height: 100%;
   margin: auto 10px auto 0 ;
-  font-size: 35px;
+  font-size: 30px;
   color: #ffdee6;
 }
 
@@ -432,6 +433,12 @@ a {
   line-height: 20px;
 }
 
+.enthusiasm {
+  text-decoration: underline;
+  text-decoration-color: #ffdee6;
+  text-decoration-style: wavy;
+}
+
 .down_arrow {
   width: 20px;
   margin: 10px auto 8px;
@@ -440,9 +447,10 @@ a {
 }
 
 .ending {
+  width: 640px;
   font-size: 13px;
   line-height: 16px;
-  margin-top: 40px;
+  margin: 40px auto 0;
 }
 
 .underline {
@@ -460,4 +468,161 @@ a {
   line-height: 35px;
   color: #fff;
   font-size: 10px;
+}
+
+/* タブレット表示時 */
+@media (max-width: 1283px) {
+  .registration_main {
+    height: calc(100% - 65px - 35px);
+    margin: 60px auto;
+    flex-direction: column;
+  }
+
+  .welcom_container {
+    width: 100%;
+    margin-bottom: 100px;
+    padding-right: 0px;
+  }
+}
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  .header {
+    height: 45px;
+  }
+
+  .registration_main {
+    margin: 25px auto;
+  }
+
+  .logo {
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .registration_main {
+    width: 90vw;
+  }
+
+  .welcom_container {
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 50px;
+  }
+  
+  .stockpile_explanation {
+    width: 310px;
+    margin: 0 auto 25px;
+    padding-left: 16px;
+  }
+
+  .motivation::before {
+    content: "\A" ;
+    white-space: pre ;
+  }
+  
+  .color_block {
+    width: 280px;
+    border-radius: 50px;
+    padding: 10px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .color_block .title_space {
+    margin: 0px;
+  }
+
+  .how_to_stockpile {
+    font-size: 15px;
+  }
+  
+  .example_how_to {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stockpile_user_img {
+    height: 120px;
+  }
+  
+  .example_center {
+    display: none;
+  }
+  
+  .example_right {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  
+  .down_arrow {
+    width: 15px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    margin: auto;
+    color: #ffdee6;
+  }
+  
+  .ending {
+    width: 300px;
+    font-size: 10px;
+    line-height: 13px;
+    margin: 25px auto 0;
+  }
+
+  .break::before {
+    content: "\A" ;
+    white-space: pre ;
+  }
+
+  /* 新規登録画面 */
+
+  .registration_container {
+    width: 250px;
+    margin-bottom: 0px;
+    font-size: 15px;
+  }
+
+  .devise_title {
+    font-size: 20px;
+  }
+  
+  .devise_error_air_space {
+    height: 15px;
+  }
+  
+  .devise_error_messages {
+    list-style: none;
+    font-size: 15px;
+    color: red;
+    display: contents;
+  }
+  
+  .password_field span {
+    font-size: 10px;
+  }
+  
+  .registration_actions {
+    width: 80px;
+    margin: 30px auto 10px;
+  }
+  
+  .registration_actions .btn {
+    width: 100%;
+    font-size: 15px;
+    padding: auto;
+  }
+
+  .devise_link {
+    width: 80px;
+    margin: 0 auto;
+  }
+  
+  .devise_link a {
+    font-size: 10px;
+  }
 }
