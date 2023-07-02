@@ -505,15 +505,20 @@ a {
   }
 
   .welcom_container {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 29px;
     margin-bottom: 50px;
   }
   
   .stockpile_explanation {
-    width: 310px;
+    width: 280px;
     margin: 0 auto 25px;
     padding-left: 16px;
+  }
+
+  .fictional_savings::before {
+    content: "\A" ;
+    white-space: pre ;
   }
 
   .motivation::before {
@@ -535,7 +540,7 @@ a {
   }
 
   .how_to_stockpile {
-    font-size: 15px;
+    font-size: 13px;
   }
   
   .example_how_to {
