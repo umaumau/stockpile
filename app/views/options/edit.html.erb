@@ -18,11 +18,11 @@
         <%= f.text_field :goal, class: "goal_form", placeholder: "例）結婚式までに10万円貯める" %>
       </div>
       <div class="">
-        <%= f.label :goal, "期限：" %>
+        <%= f.label :goal_day, "期限：" %>
         <%= f.date_field :goal_day, class: "limit_form" %>
       </div>
       <div class="rate_option">
-        <%= f.label :goal, "レート：" %>
+        <%= f.label :rate, "レート：" %>
         <span>1分＝</span><%= f.number_field :rate, class: "rate_form", placeholder: "例）10", min: "1" %>円
       </div>
       <div class="option_submit">
