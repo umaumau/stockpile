@@ -9,11 +9,12 @@ a {
 /* ヘッダー */
 
 .header {
-  background-color: #fcd8d8; /* #f1f8fe */
+  background-color: #ffc1cb; /* #f1f8fe */
   width: 100vw;
   height: 65px;
   padding: 0 10px;
   font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 20px;
 }
 
 .nav {
@@ -83,10 +84,9 @@ a {
 }
 
 .record_errors {
-  font-size: 15px;
+  font-size: 18px;
   color: red;
   margin-bottom: 50px;
-  text-decoration: underline;
 }
 
 .field_with_errors {
@@ -104,25 +104,27 @@ a {
 }
 
 .goal {
-  margin: 30px 0px 30px;
+  margin: 20px 0px 30px;
+  max-width: 826px;
 }
 
 .goal span {
   background:linear-gradient(transparent 70%, #fff3f6 0%);
+  line-height: 45px;
 }
 
 .record{
   display: flex;
 }
 
-.record span {
+.star {
   margin-right: 10px;
   color: #fcd8d8;
 }
 
 .hidden{
   display: none;
-  margin: 40px 0 0 40px;
+  margin: 40px auto 0;
   font-size: 25px;
 }
 
@@ -133,31 +135,33 @@ a {
   padding: 5px;
   background-color: #fff;
   color: #f994a3;
-  margin: 0 10px 0 10px;
+}
+
+.record .btn {
+  margin-right: 10px;
 }
 
 .price_use_form {
   border: 1px solid #999;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px 10px;
   margin: 0 5px 0 0;
-  width: 150px;
+  width: 200px;
 }
 
 .record_form {
   border: 1px solid #999;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px 10px;
   margin-right: 5px;
-  width: 150px;
+  width: 200px;
 }
 
 /* 設定ページ */
 
 .option_explanation {
-  width: 800px;
   font-size: 23px;
   line-height: 50px;
   margin: 100px 0 30px;
@@ -165,7 +169,7 @@ a {
 
 .option_explanation span {
   margin-right: 10px;
-  color: #fcd8d8;
+  color: #f994a3;
 }
 
 .option_error_messages {
@@ -222,7 +226,6 @@ a {
 .option_submit .btn {
   width: 100%;
   font-size: 25px;
-  padding: auto;
 }
 
 /* ログイン画面 */
@@ -299,9 +302,7 @@ a {
 }
 
 .session_actions .btn {
-  width: 100%;
   font-size: 20px;
-  padding: auto;
 }
 
 .devise_link {
@@ -498,19 +499,23 @@ a {
 
   .session_main{
     width: 100%;
-    height: calc(100% - 65px - 35px);
-    margin: 260px auto;
+    height: calc(1366px - 65px - 35px);
+    display: contents;
+  }
+
+  .container {
+    height: calc(1366px - 65px - 35px);
+    margin-top: 150px;
   }
 
   /* 設定画面 */
 
   .main{
-    height: calc(1024px - 65px - 35px);
+    height: calc(1366px - 65px - 35px);
   }
 
   .option_explanation {
-    width: 570px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 30px;
   }
   
@@ -553,9 +558,17 @@ a {
   }
   
   .option_submit .btn {
-    width: 100%;
     font-size: 20px;
-    padding: auto;
+  }
+
+  /* トップページ */
+
+  .price_use_form {
+    margin: 0 5px 20px 0;
+  }
+
+  .record_form {
+    margin: 0 5px 20px 0;
   }
 }
 
@@ -573,6 +586,7 @@ a {
   .registration_main {
     height: calc(100% - 45px - 35px);
     margin: 25px auto;
+    color: #181818;
   }
 
   .logo {
@@ -714,14 +728,16 @@ a {
   /* ログイン画面 */
 
   .session_main{
-    height: calc(100% - 45px - 35px);
+    height: calc(926px - 45px - 35px);
     width: 80vw;
-    color: #333333;
-    margin: 150px auto;
+    color: #181818;
+    display: contents;
   }
 
   .container {
+    height: calc(926px - 65px - 35px);
     width: 250px;
+    margin-top: 130px;
     margin-bottom: 0px;
     font-size: 15px;
   }
@@ -752,15 +768,15 @@ a {
 
   .main{
     width: 100vw;
-    height: calc(896px - 45px - 35px);
+    height: calc(926px - 45px - 35px);
     font-size: 13px;
+    color: #181818;
   }
 
   .option_explanation {
-    width: 300px;
-    font-size: 13px;
-    line-height: 25px;
-    margin: 70px 0 30px;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 70px 30px 10px;
   }
   
   .option_explanation span {
@@ -773,9 +789,9 @@ a {
   }
   
   .option_form {
-    width: 280px;
-    margin-bottom: 100px;
-    font-size: 15px;
+    width: 290px;
+    font-size: 18px;
+    margin-top: 0px;
   }
   
   .goal_form {
@@ -786,6 +802,7 @@ a {
   .goal_day_form {
     font-size: 13px;
     width: 150px;
+    height: 27px;
   }
   
   .rate_form {
@@ -795,10 +812,71 @@ a {
   
   .option_submit {
     width: 70px;
+    margin-top: 0px;
   }
   
   .option_submit .btn {
     font-size: 13px;
   }
   
+  /* トップページ */
+
+  .top_page {
+    font-size: 20px;
+    margin: 50px 35px;
+  }
+
+  .record_errors {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .title {
+    margin-bottom: 50px;
+  }
+  
+  .price_sum {
+    line-height: 30px;
+  } 
+
+  /* .goal {
+    margin: 20px 0px 30px;
+    max-width: 826px;
+  } */
+
+  .goal span {
+    line-height: 30px;
+  }
+
+  .record{
+    display: contents;
+  }
+
+  .record_br::after {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .hidden{
+    margin: 10px auto 0;
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+
+  .record .btn {
+    margin: 10px 0 0 0px;
+  }
+
+  .price_use_form {
+    font-size: 18px;
+    margin: 0 5px 10px 0;
+  }
+
+  .record_form {
+    font-size: 18px;
+    margin: 0 5px 10px 0;
+  }
 }

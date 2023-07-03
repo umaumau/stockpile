@@ -2,7 +2,7 @@
   <div class="top_page">
     <% if @record.errors.any? %>
     <div class="record_errors">
-      ※保存できませんでした。空欄が無いこと、数値は半角であることに注意して再度入力してください。
+      保存できませんでした。空欄が無いこと、数値は半角であることに注意して再度入力してください。
     </div>
     <% end %>
     <div class="title">
@@ -15,7 +15,7 @@
           <span><%= "「 #{current_user.option.goal} 」に向けてがんばりましょう！" %></span>
         <% end %>
       </div>
-      <div class="hidden", id="use_form">
+      <div class="hidden use_form", id="use_form">
         <%= form_with model: @record, url: records_path, local: true do |f| %>
           <%= f.text_field :content, class: "price_use_form", placeholder: "例）旅行費用" %>として
           <%= f.number_field :price, class: "price_use_form", placeholder: "例）300000", min: "1" %>円つかう！
@@ -23,7 +23,7 @@
         <% end %>
       </div>
     </div>
-    <div class="record"><span>★</span>記録をする。
+    <div class="record"><span class="star">★</span><span class="record_br">記録をする。</span>
       <%= button_tag "がんばった！", id: "complete", type: "button", class: "btn"%>
       <%= button_tag "むだづかい…", id: "wasteful", type: "button", class: "btn"%>
     </div>
