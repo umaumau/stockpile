@@ -581,7 +581,7 @@ a {
 
   .header {
     height: 45px;
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .registration_main {
@@ -842,11 +842,6 @@ a {
   .price_sum {
     line-height: 30px;
   } 
-
-  /* .goal {
-    margin: 20px 0px 30px;
-    max-width: 826px;
-  } */
 
   .goal span {
     line-height: 30px;
