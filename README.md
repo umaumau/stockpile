@@ -1,4 +1,5 @@
-[![Image from Gyazo](https://i.gyazo.com/c8918fbf817ac3316bd0029e06693505.png)](https://gyazo.com/c8918fbf817ac3316bd0029e06693505)
+<!-- [![Image from Gyazo](https://i.gyazo.com/c8918fbf817ac3316bd0029e06693505.png)](https://gyazo.com/c8918fbf817ac3316bd0029e06693505) -->
+[![Image from Gyazo](https://i.gyazo.com/4ebed4a8087c1f6d1dd947009c6a6cd7.png)](https://gyazo.com/4ebed4a8087c1f6d1dd947009c6a6cd7)
 # アプリケーション名
 Stockpile
 # アプリケーション概要
