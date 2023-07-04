@@ -20,6 +20,7 @@
 | time_minute | integer    | null: false                    |
 | content     | string     | null: false                    |
 | user        | references | null: false, foreign_key: true |
+| rate        | integer    | null: false                    |
 
 ### Association
 
