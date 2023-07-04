@@ -297,7 +297,7 @@ a {
 }
 
 .session_actions {
-  width: 150px;
+  width: 132px;
   margin: 30px auto 20px;
 }
 
@@ -484,9 +484,10 @@ a {
   /* 新規登録画面 */
 
   .registration_main {
-    height: calc(100% - 65px - 35px);
-    margin: 60px auto;
+    height: calc(1366px - 65px - 35px);
+    margin-top: 100px;
     flex-direction: column;
+    justify-content: unset;
   }
 
   .welcom_container {
@@ -635,6 +636,7 @@ a {
 
   .how_to_stockpile {
     font-size: 13px;
+    color: #f88b9c;
   }
   
   .example_how_to {
@@ -655,6 +657,7 @@ a {
   .example_right {
     font-size: 10px;
     line-height: 18px;
+    color: #000000;
   }
   
   .down_arrow {
@@ -671,6 +674,7 @@ a {
     font-size: 10px;
     line-height: 13px;
     margin: 25px auto 0;
+    color: #000000;
   }
 
   .break::before {
