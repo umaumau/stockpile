@@ -159,6 +159,42 @@ a {
   width: 200px;
 }
 
+/* 過去の記録ページ */
+
+.simple-calendar {
+  width: 700px;
+
+  .day {}
+
+  .wday-0 {}
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+
+  .today {}
+  .past {}
+  .future {}
+
+  .start-date {}
+
+  .prev-month {}
+  .next-month { }
+  .current-month {}
+
+  .has-events {}
+}
+
+.calendar_record {
+  font-size: 10px;
+}
+
+.calendar_record_show {
+  width: 400px;
+}
+
 /* 設定ページ */
 
 .option_explanation {
