@@ -161,10 +161,47 @@ a {
 
 /* 過去の記録ページ */
 
+.past_recors{
+  width: 80vw;
+  height: calc(1080px - 65px - 35px);
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 23px;
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  padding-top: 70px;
+}
+
+.calendar-heading {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.calendar-heading a {
+  color: #000000;
+}
+
+.calendar-title {
+  font-size: 19px;
+  letter-spacing: 2px;
+  margin: 0 10px;
+}
+
+.day_names {
+  font-size: 18px;
+}
+
 .simple-calendar {
   width: 700px;
 
-  .day {}
+  .day {
+    font-size: 15px;
+  }
+
+  .day_names th {
+    text-align: center;
+  }
 
   .wday-0 {}
   .wday-1 {}
@@ -174,7 +211,9 @@ a {
   .wday-5 {}
   .wday-6 {}
 
-  .today {}
+  .today {
+    background-color: #ffeded;
+  }
   .past {}
   .future {}
 
@@ -184,11 +223,20 @@ a {
   .next-month { }
   .current-month {}
 
-  .has-events {}
+  .has-events {
+  }
 }
 
 .calendar_record {
-  font-size: 10px;
+  font-size: 13px;
+}
+
+.calendar_record a {
+  color: #000000;
+}
+
+.minus {
+  color: #ff5151;
 }
 
 .calendar_record_show {
