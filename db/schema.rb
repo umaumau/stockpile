@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_07_02_091623) do
+ActiveRecord::Schema.define(version: 2023_07_07_085246) do
 
   create_table "options", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "goal"
@@ -29,7 +29,9 @@ ActiveRecord::Schema.define(version: 2023_07_02_091623) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "rate", null: false
+    t.integer "rate", default: 1, null: false
+    t.date "goal_day"
+    t.string "goal"
     t.index ["user_id"], name: "index_records_on_user_id"
   end
 

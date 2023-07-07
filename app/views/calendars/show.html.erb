@@ -1,0 +1,28 @@
+<div class="past_recors">
+  <%= render partial: "calendar" %>
+  <div class="calendar_record_show">
+    <div class="record_date">
+      <%= "#{@record.created_at.strftime("%Y年%m月%d日 %H時%M分")}の記録" %>
+    </div>
+    <div class="record_content">
+      <% if @record.time_minute.present? %>
+        <%= "#{@record.content}を#{@record.time_minute}分がんばった"%>
+        <div class="record_goal_rate">
+          <%= "#{@record.time_minute}分 × #{@record.rate}円（レート） = #{@record.time_minute * @record.rate}円たまった"%>
+        </div>
+      <% elsif @record.price.present? %>
+        <%= "#{@record.content}に#{@record.price}円つかった"%>
+      <% end %>
+    </div>
+    <% if @record.goal.present? %>
+      <div class="record_goal">
+        このときの目標：<%= @record.goal %>
+      </div>
+    <% end %>
+    <% if @record.goal_day.present? %>
+      <div class="record_goal_day">
+        このときの期限：<%= @record.goal_day.strftime("%Y年%m月%d日") %>
+      </div>
+    <% end %>
+  </div>
+</div>

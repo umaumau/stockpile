@@ -1,0 +1,17 @@
+<div class="calendar">
+  <%= month_calendar do |date| %>
+    <%= date.day %>
+    <div class="calendar_record">
+      <% current_user.records.where("DATE(created_at) = ?", date).each do |record| %>
+        <%= link_to calendar_path(record) do %>
+          <%= record.content %>
+          <% if record.time_minute.present? %>
+            <span class="plus"><%= "#{record.time_minute}分" %></span><br>
+          <% elsif record.price.present? %>
+            <span class="minus"><%= "#{record.price}円" %></span><br>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

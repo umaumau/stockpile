@@ -36,6 +36,6 @@ class RecordsController < ApplicationController
   end
 
   def record_params
-    params.require(:record).permit(:content, :price, :time_minute).merge(user_id: current_user.id, rate: current_user.option.rate)
+    params.require(:record).permit(:content, :price, :time_minute).merge(user_id: current_user.id, rate: current_user.option.rate, goal: current_user.option.goal, goal_day: current_user.option.goal_day)
   end
 end

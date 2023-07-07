@@ -34,7 +34,7 @@ https://stockpile-vjtm.onrender.com
 - テーマカラーをユーザーごとに設定できる機能
 - 過去の記録を表示する機能
 # データベース設計
-[![Image from Gyazo](https://i.gyazo.com/c531935c3968b9bba6bb8f1dd58772fc.png)](https://gyazo.com/c531935c3968b9bba6bb8f1dd58772fc)
+[![Image from Gyazo](https://i.gyazo.com/8bdf5fe5f1519ba422c6ad6a40d21d00.png)](https://gyazo.com/8bdf5fe5f1519ba422c6ad6a40d21d00)
 # 画面遷移図
 [![Image from Gyazo](https://i.gyazo.com/e7a35d06b0a9fc61ef1005a63ab1041f.png)](https://gyazo.com/e7a35d06b0a9fc61ef1005a63ab1041f)
 # 工夫したポイント
