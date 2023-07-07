@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root to: "records#index"
   resources :records, only: [:index, :create]
   resources :options, only: [:edit, :update]
-  resources :calendars, only: :index
+  resources :calendars, only: [:index, :show]
 end
