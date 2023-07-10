@@ -161,15 +161,16 @@ a {
 
 /* 過去の記録ページ */
 
-.past_recors{
-  width: 80vw;
+.past_records{
+  width: 85vw;
   height: calc(1080px - 65px - 35px);
   font-family: 'Zen Maru Gothic', sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   color: #333333;
   background-color: #fff;
   display: flex;
-  padding-top: 70px;
+  justify-content: space-between;
+  padding-top: 80px;
 }
 
 .calendar-heading {
@@ -240,7 +241,51 @@ a {
 }
 
 .calendar_record_show {
-  width: 400px;
+  width: 410px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.record_show_explanation {
+  margin-top: 40px;
+}
+
+.record_show_explanation span {
+  margin-right: 5px;
+  color: #f994a3;
+}
+
+.number {
+  letter-spacing: 2px;
+}
+
+.record_date {
+  margin-bottom: 50px;
+}
+
+.record_content {
+  line-height: 30px;
+  background-color: #fff0f0;
+  border-radius: 50px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.record_option {
+  font-size: 18px;
+  background-color: #fff9f9;
+  border-radius: 50px;
+  padding: 30px;
+}
+
+.record_goal {
+  margin-bottom: 10px;
+}
+
+.record_goal_day {
+  margin-bottom: 10px;
 }
 
 /* 設定ページ */
