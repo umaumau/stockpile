@@ -39,7 +39,7 @@ https://stockpile-vjtm.onrender.com
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/13463a124e5b1df6d27329c32023f2b1.png)](https://gyazo.com/13463a124e5b1df6d27329c32023f2b1)
 # 画面遷移図
-[![Image from Gyazo](https://i.gyazo.com/e7a35d06b0a9fc61ef1005a63ab1041f.png)](https://gyazo.com/e7a35d06b0a9fc61ef1005a63ab1041f)
+[![Image from Gyazo](https://i.gyazo.com/70739328a23d6030d51a877024f10487.png)](https://gyazo.com/70739328a23d6030d51a877024f10487)
 # 工夫したポイント
 - パッと見てすぐに記録ができる、シンプルなデザイン
 - ボタンの色が変わり、感覚的に使い方が分かるデザイン
