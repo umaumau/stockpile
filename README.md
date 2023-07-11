@@ -36,6 +36,7 @@ https://stockpile-vjtm.onrender.com
 # 実装予定の機能
 - 過去の記録を表示する機能（実装中）
 - テーマカラーをユーザーごとに設定できる機能
+- フォローした人の設定や記録を閲覧できる機能
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/13463a124e5b1df6d27329c32023f2b1.png)](https://gyazo.com/13463a124e5b1df6d27329c32023f2b1)
 # 画面遷移図
