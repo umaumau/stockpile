@@ -198,6 +198,7 @@ a {
 
   .day {
     font-size: 15px;
+    height: 90px;
   }
 
   .day_names th {
@@ -212,6 +213,7 @@ a {
 .calendar_record {
   font-size: 13px;
   overflow: scroll;
+  height: 50px;
 }
 
 .calendar_record a {
