@@ -784,7 +784,13 @@ a {
 
   .header {
     height: 45px;
-    font-size: 13px;
+    font-size: 10px;
+    padding: 0 5px;
+  }
+
+  .nav__list {
+    list-style: none;
+    padding-left: 10px;
   }
 
   .registration_main {
@@ -794,7 +800,7 @@ a {
   }
 
   .logo {
-    height: 40px;
+    height: 30px;
     object-fit: contain;
   }
 
@@ -1080,5 +1086,116 @@ a {
   .record_form {
     font-size: 18px;
     margin: 0 5px 10px 0;
+  }
+
+  /* 過去の記録ページ */
+
+  .past_records{
+    width: 85vw;
+    height: calc(926px - 65px - 35px);
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  
+  .calendar-heading {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-heading a {
+    color: #000000;
+  }
+  
+  .calendar-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 0 10px;
+  }
+  
+  .day_names {
+    font-size: 10px;
+  }
+  
+  .simple-calendar {
+    width: 90vw;
+  
+    .day {
+      font-size: 10px;
+      height: 60px;
+    }
+  
+    .day_names th {
+      text-align: center;
+    }
+  
+    .today {
+      background-color: #ffeded;
+    }
+  }
+  
+  .calendar_record {
+    font-size: 10px;
+    overflow: scroll;
+    height: 45px;
+  }
+  
+  .calendar_record a {
+    color: #000000;
+  }
+  
+  .minus {
+    color: #ff5151;
+  }
+  
+  .calendar_record_show {
+    width: 80vw;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .record_show_explanation {
+    margin-top: 40px;
+    font-size: 15px;
+  }
+  
+  .record_show_explanation span {
+    margin-right: 5px;
+    color: #f994a3;
+  }
+  
+  .number {
+    letter-spacing: 2px;
+  }
+  
+  .record_date {
+    margin-bottom: 30px;
+    font-size: 13px;
+  }
+  
+  .record_content {
+    line-height: 20px;
+    background-color: #fff0f0;
+    border-radius: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  
+  .record_option {
+    font-size: 13px;
+    background-color: #fff9f9;
+    border-radius: 40px;
+    padding: 20px;
+  }
+  
+  .record_goal {
+    margin-bottom: 5px;
+  }
+  
+  .record_goal_day {
+    margin-bottom: 5px;
   }
 }
