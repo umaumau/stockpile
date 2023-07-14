@@ -34,11 +34,10 @@ https://stockpile-vjtm.onrender.com
 # 概要ページの画像
 [![Image from Gyazo](https://i.gyazo.com/6be53af87373ca5c8be45a3297b97a68.png)](https://gyazo.com/6be53af87373ca5c8be45a3297b97a68)
 # 実装予定の機能
-- 過去の記録を表示する機能（実装中）
 - テーマカラーをユーザーごとに設定できる機能
-- フォローした人の設定や記録を閲覧できる機能
+- フォローした人の設定や記録を閲覧できる機能（実装中）
 # データベース設計
-[![Image from Gyazo](https://i.gyazo.com/13463a124e5b1df6d27329c32023f2b1.png)](https://gyazo.com/13463a124e5b1df6d27329c32023f2b1)
+[![Image from Gyazo](https://i.gyazo.com/3a7d44149e5ba21bd795e0ae72142604.png)](https://gyazo.com/3a7d44149e5ba21bd795e0ae72142604)
 # 画面遷移図
 [![Image from Gyazo](https://i.gyazo.com/70739328a23d6030d51a877024f10487.png)](https://gyazo.com/70739328a23d6030d51a877024f10487)
 # 工夫したポイント
