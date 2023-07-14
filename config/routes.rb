@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   resources :records, only: [:index, :create]
   resources :options, only: [:edit, :update]
   resources :calendars, only: [:index, :show]
+  resources :users do
+    resources :relationships, only: [:create, :destroy]
+  end
 end
